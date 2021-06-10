@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+* {
+	padding: 0;
+	font-family: 'Roboto Slab', serif;
+}
+
+.createDoctor {
+    font-size: 20px;
+}
+
+.form-control {
+    font-size: 20px;
+}
+
+.doctorConfirm, .dashboard-doctors-info {
+    font-size: 22px;
+}
+
+.navbar {
+	font-size: 20px;
+	border-bottom: 4px solid #00D1FF;
+	word-spacing: 2px;
+	tab-size: 2;
+}
+
+.doctorsCount {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.table-bordered {
+    width: 100px;
+    font-size: 18px;
+}
+
+h1 {
+    margin-top: 5%;
+    text-align: center;
+	font-size: 30px;
+}
