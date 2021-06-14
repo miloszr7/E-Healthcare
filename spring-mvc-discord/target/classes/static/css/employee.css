@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.table {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.table {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.navbar-custom, .navbar-brand {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    color: white;
+    background-color: black;
+}

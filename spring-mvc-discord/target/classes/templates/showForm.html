@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+
+    <form action="processForm" th:object="${EmbedMessage}" method="GET">
+
+        <input type="text" name="title" placeholder="Title"/>
+
+        <br /><br />
+
+        <input type="text" name="color"
+               placeholder="Color" />
+
+        <br /><br />
+
+        <input type="text" name="desc"
+               placeholder="Description" />
+
+        <br /><br />
+
+        <select name="textChannel" class="textChannels">
+            <option th:each="textChannel : ${textChannels.values()}" th:value="${textChannel}" th:label="${textChannel}"></option>
+        </select>
+
+        <br /><br />
+
+        <input type="submit" value="Send embed message" class="submit-button"/>
+
+    </form>
+
+</body>

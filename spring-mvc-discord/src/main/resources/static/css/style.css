@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #00BCEA;
+	font-size: 24px;
+}
+
+body {
+	color: white;
+	text-align: center;
+	font-size: 26px;
+}
+
+.embed {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #2C2F33;
+    text-align: left;
+    height: 300px;
+    width: 400px;
+    margin-left: 38%;
+    margin-top: 5%;
+    border-left: 6px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.embed-content-title {
+    background-color: #2C2F33;
+    font-weight: bold;
+}
+
+.embed-content {
+    background-color: #2C2F33;
+}
+
+.alert {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#age {
+    width: 50px;
+}
+
+.textChannels {
+    background-color: #23272A;
+}
+
+.target-channel {
+    text-align: center;
+    font-weight: bold;
+}
+
+.submit-button {
+    display: inline-block;
+	width: 300px;
+	color: white;
+	border: 3px solid #23272A;
+    background-color: transparent;
+    padding: 20px;
+	font-size: 20px;
+}
+
+.submit-button:hover {
+    background-color: #23272A;
+    cursor: pointer;
+}
+
+form {
+	margin-top: 10%;
+}
+
+input, select {
+    display: inline-block;
+	width: 300px;
+	color: white;
+	border: none;
+    background-color: #23272A;
+    padding: 20px;
+	font-size: 20px;
+}
