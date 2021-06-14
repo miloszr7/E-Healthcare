@@ -3,7 +3,7 @@ Simple E-Healthcare web application made with Spring MVC, Thymeleaf, Bootstrap a
 
 # Database
 
-`
+```
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -105,4 +105,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-`
+```
