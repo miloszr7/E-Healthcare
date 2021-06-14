@@ -37,11 +37,11 @@ CREATE TABLE `doctors` (
 --
 
 INSERT INTO `doctors` (`id`, `firstName`, `lastName`, `title`, `age`) VALUES
-(1, 'Harvey', 'Montana', 'Family doctor', 31),
-(2, 'asds', 'adsad', 'dasd', 43),
-(3, 'asdas', 'dsada', 'dasda', 3),
-(4, 'asdsa', 'dsad', 'dasda', 3),
-(5, 'sfdsfd', 'dfsfsd', 'fsdfsd', 43);
+(1, 'John', 'Smith', 'Family doctor', 31),
+(2, 'Julia', 'Smith', 'Family doctor', 43),
+(3, 'Jessica', 'Smith', 'Family doctor', 33),
+(4, 'David', 'Smith', 'Family doctor', 34),
+(5, 'Blake', 'Smith', 'Family doctor', 43);
 
 -- --------------------------------------------------------
 
@@ -64,9 +64,9 @@ CREATE TABLE `patients` (
 --
 
 INSERT INTO `patients` (`id`, `firstName`, `lastName`, `SSN`, `phoneNumber`, `description`, `age`) VALUES
-(1, 'Michael', 'Meira', '432432453', '435432543', 'problems with...', 22),
-(2, 'da', 'sdsad', 'dasdsa', 'dsadadsd', 'asdadsad', 33),
-(3, 'Jess', 'Apple', '12412414', '1412123323', 'dasdasdasdsadsddadasdsadasdsadasdasdasdasdsadsadsad', 12);
+(1, 'Michael', 'Apple', '444444444', '555 555 555', 'Problems with...', 56),
+(2, 'Jay', 'Apple', '444444444', '555 555 555', 'Problems with...', 33),
+(3, 'Jess', 'Apple', '444444444', '555 555 555', 'Problems with...', 12);
 
 --
 -- Indexes for dumped tables
