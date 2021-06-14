@@ -1,13 +1,7 @@
 # E-Healthcare
 Simple E-Healthcare web application made with Spring MVC, Thymeleaf, Bootstrap and Hibernate.
 
-# Preview
-
-![Dashboard](https://i.imgur.com/4XjDIrF.png)
-![Patients](https://i.imgur.com/al5mcXo.png)
-![Find patients](https://i.imgur.com/Kj8JcEt.png)
-
-# Database
+## Setting up database
 
 ```
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
