@@ -4,6 +4,8 @@ Simple E-Healthcare web application made with Spring MVC, Thymeleaf, Bootstrap a
 # Preview
 
 ![Dashboard](https://i.imgur.com/4XjDIrF.png)
+![Patients](https://i.imgur.com/al5mcXo.png)
+![Find patients](https://i.imgur.com/Kj8JcEt.png)
 
 # Database
 
