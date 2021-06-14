@@ -1,5 +1,6 @@
 # E-Healthcare
 Simple E-Healthcare web application made with Spring MVC, Thymeleaf, Bootstrap and Hibernate.
+You can register doctors and patients along with their personal information.
 
 ## Setting up database
 
