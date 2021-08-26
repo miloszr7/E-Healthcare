@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+	<title>Save Patient</title>
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<h3>Patients Directory</h3>
+		<hr>
+		
+		<p class="h4 mb-4">Save Patient</p>
+	
+		<form action="#" th:action="@{/patients/save}" th:object="${patient}" method="POST">
+		
+			<input type="text" th:field="*{firstName}"
+					class="form-control mb-4 col-4" placeholder="First name">
+
+			<input type="text" th:field="*{lastName}"
+					class="form-control mb-4 col-4" placeholder="Last name">
+
+			<input type="text" th:field="*{SSN}"
+					class="form-control mb-4 col-4" placeholder="SSN">
+
+			<input type="text" th:field="*{phoneNumber}"
+				   class="form-control mb-4 col-4" placeholder="Phone number">
+
+			<input type="text" th:field="*{description}"
+				   class="form-control mb-4 col-4" placeholder="Description">
+
+			<input type="text" th:field="*{age}"
+				   class="form-control mb-4 col-4" placeholder="Age">
+				
+			<button type="submit" class="btn btn-info col-2">Save</button>
+						
+		</form>
+	
+		<hr>
+		<a th:href="@{/patients/list}">Back to Patient List</a>
+		
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

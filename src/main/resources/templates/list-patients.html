@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+	<title>Patients Directory</title>
+</head>
+
+<body>
+
+<div class="container">
+
+	<h3>Patients Directory</h3>
+	<hr>
+
+	<a th:href="@{/patients/form}" class="btn btn-primary btn-sm mb-3">
+		Add Patient
+	</a>
+	
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>SSN</th>
+				<th>Phone</th>
+				<th>Description</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="patient : ${patients}">
+			
+				<td th:text="${patient.firstName}"></td>
+				<td th:text="${patient.lastName}"></td>
+				<td th:text="${patient.SSN}"></td>
+				<td th:text="${patient.phoneNumber}"></td>
+				<td th:text="${patient.description}"></td>
+				<td th:text="${patient.age}"></td>
+
+			</tr>
+		</tbody>		
+	</table>
+	
+</div>
+	
+</body>
+</html>
+
+
+
