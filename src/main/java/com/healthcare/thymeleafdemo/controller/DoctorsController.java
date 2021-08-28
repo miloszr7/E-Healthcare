@@ -51,6 +51,24 @@ public class DoctorsController {
 		return "redirect:/doctors/list";
 	}
 
+	@GetMapping("/update")
+	private String update(@RequestParam("id") int theId, Model theModel) {
+
+		Doctor doctor = doctorsService.findById(theId);
+
+		theModel.addAttribute("doctor", doctor);
+
+		return "doctors-form";
+	}
+
+	@GetMapping("/remove")
+	private String remove(@RequestParam("id") int theId, Model theModel) {
+
+		doctorsService.deleteById(theId);
+
+		return "redirect:/doctors/list";
+	}
+
 }
 
 

@@ -5,10 +5,7 @@ import com.healthcare.thymeleafdemo.entity.Patient;
 import com.healthcare.thymeleafdemo.service.PatientsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
@@ -54,10 +51,28 @@ public class PatientsController {
 	private String savePatients(@ModelAttribute("patient") Patient thePatient) {
 
 		if (thePatient.getFirstName().isEmpty() || thePatient.getLastName().isEmpty()) {
-			throw new RuntimeException("First name and Last name cannot be empty.");
+			throw new RuntimeException("Fields cannot be empty.");
 		} else {
 			patientsService.save(thePatient);
 		}
+
+		return "redirect:/patients/list";
+	}
+
+	@GetMapping("/update")
+	private String update(@RequestParam("id") int theId, Model theModel) {
+
+		Patient patient = patientsService.findById(theId);
+
+		theModel.addAttribute("patient", patient);
+
+		return "patients-form";
+	}
+
+	@GetMapping("/remove")
+	private String remove(@RequestParam("id") int theId, Model theModel) {
+
+		patientsService.deleteById(theId);
 
 		return "redirect:/patients/list";
 	}
